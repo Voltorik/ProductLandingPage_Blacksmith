@@ -1,0 +1,170 @@
+:root {
+    --lightgray: #A8A8A8;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: var(--lightgray);
+    font-family: initial, sans-serif;
+    font-size: 1.0rem;
+    margin: 0;
+  }
+  
+  #page-container {
+    background: #8e8e8e;
+    margin: 80px 50px 30px 50px;
+    padding: 10px;
+    border: 5px ridge black;
+  }
+  
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  /*User story #13, #15*/
+  #header {
+    position: fixed;
+    display: flex;
+    margin: 0;
+    min-height: 50px;
+    width: 100%;
+    top: 0;
+    padding: 0 20px;
+    align-items: center;
+    background-color: white;
+  }
+  
+  #logo {
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+  
+  #logo > p {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin: auto 0 auto 10px;
+  }
+  
+  #logo > img {
+    width: 100%;
+    height: 100%;
+    max-width: 50px;
+  }
+  
+  nav {
+    font-size: 1.3rem;
+    width: 100%;
+  }
+  
+  #nav-bar > ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  /*User story #14*/
+  @media (max-width: 550px) {
+    #nav-bar > ul { 
+      /*Make nav-bar horizontal on smaller screens*/
+    }
+  }
+  
+  .nav-link {
+    border: 3px inset black;
+    border-radius: 5px;
+    padding: 7px;
+  }
+  
+  #product-container {
+    margin: 75px auto 0 auto;
+    max-width: 60%;
+    text-align: center;
+  }
+  
+  .entry {
+    margin: 20px auto;
+    padding: 5px;
+    border: 1px solid black;
+    background: radial-gradient(circle, rgba(134,133,133,1) 25%, rgba(92,91,91,1) 75%);
+  }
+  
+  .entry > h2 {
+    font-size: 1.7rem;
+  }
+  
+  .entry > p {
+    font-size: 1.1rem;
+  }
+  
+  #video-container {
+    margin: 75px auto;
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    height: 25rem;
+    border: 1px solid black;
+  }
+  
+  #video-container > iframe {
+    width: 100%;
+  }
+  
+  #price-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 75px auto 50px auto;
+    max-width: 35%;
+    height: 7rem; 
+    padding: 10px;
+    border: 1px solid black;
+    background-image: url("https://c1.peakpx.com/wallpaper/811/511/796/background-texture-grunge-metal-wallpaper.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  #price-container > h2 {
+    font-size: 1.8rem;
+    color: black;
+  }
+  
+  #price-container > p {
+    font-weight: 550;
+    font-size: 1.2rem;
+    text-shadow: 1px 0px black;
+  }
+  
+  #email-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0px auto 20px auto;
+    max-width: 550px;
+    width: 100%;
+  }
+  
+  #email-title {
+    padding: 5px;
+  }
+  
+  #form {
+    padding: 7px;
+    
+  }
+  
+  #form > input {
+    padding: 3px;
+  }
+  
